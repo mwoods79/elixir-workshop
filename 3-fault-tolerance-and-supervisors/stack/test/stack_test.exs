@@ -16,6 +16,7 @@ defmodule StackTest do
     {:ok, pid} = Stack.start_link
     Stack.push(pid, :bar)
     Stack.push(pid, :foo)
+    assert Stack.size(pid) == 2
     assert Stack.pop(pid) == :foo
     assert Stack.size(pid) == 1
   end
