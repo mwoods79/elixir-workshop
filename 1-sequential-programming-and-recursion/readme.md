@@ -192,6 +192,14 @@ iex> foo.("hello")
 ```
 
 ---
+##Now we are switching to Compiled Elixir
+elixirc is a common way to compile elixir.
+however, with large projects 
+usually a mix file is created 
+and iex is brought from the compiled code with the command:
+
+iex -S mix
+mix is a build tool.
 
 # Modules
 
