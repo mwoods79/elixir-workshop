@@ -5,4 +5,8 @@ defmodule PlugAppTest do
   test "the truth" do
     assert 1 + 1 == 2
   end
+	
+  test "hello method" do
+    assert PlugApp.hello == :world
+  end
 end
