@@ -26,8 +26,9 @@ Use `iex` like a calculator:
 ```elixir
 iex> 1 + 1
 2
-iex> :math.pos(1000, 3)
-1.0e9
+
+iex> :math.sqrt(40238726007709377354370243392300398571937486421071463254379991042993851239862902059204420848696940480047998861019719605863166687299480855890132382966994459099742450408707375991882362772718873251977950595099527612087497546249704360141827809464649629105639388743788648733711918104582578364784997701247663288983)
+6.343400192933548e153
 ```
 
 ---
@@ -41,9 +42,10 @@ iex> :math.pos(1000, 3)
 Unbounded
 
 ```elixir
-iex> fact(1000)
-4023872600770937735437024339230039857193748642107146...
+iex> :math.pow(3, 646)
+1.6608505280233425e308
 ```
+
 
 ---
 
@@ -192,6 +194,14 @@ iex> foo.("hello")
 ```
 
 ---
+##Now we are switching to Compiled Elixir
+elixirc is a common way to compile elixir.
+however, with large projects 
+usually a mix file is created 
+and iex is brought from the compiled code with the command:
+
+iex -S mix
+mix is a build tool.
 
 # Modules
 
